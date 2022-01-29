@@ -1,4 +1,9 @@
 %% Comparison between the multichannel Join LMS and McFxLMS algorithms
+%   __  __            _       _       _     _
+%  |  \/  | ___      | | ___ (_)_ __ | |_  | |    _ __ ___  ___
+%  | |\/| |/ __|  _  | |/ _ \| | '_ \| __| | |   | '_ ` _ \/ __|
+%  | |  | | (__  | |_| | (_) | | | | | |_  | |___| | | | | \__ \
+%  |_|  |_|\___|  \___/ \___/|_|_| |_|\__| |_____|_| |_| |_|___/
 
 %% Introduction
 % We simulated a fully-connected four-channel MCANC system using the Multichannel joint LMS and McFxLMS algorithms in this simulation. The first figure depicts the frequency responses of sixteen control filters used in these two algorithms, while the second figure depicts four error signals.
@@ -7,7 +12,8 @@
 % <<1-s2.0-S0165168408003770-gr1.jpg>>
 %
 % The algorithms' source code is available on Github:
-% <https://github.com/ShiDongyuan/Multichannel_FxLMS_python_code.git McFxLMS>
+% <https://github.com/ShiDongyuan/Multichannel_FxLMS_python_code.git
+% McFxLMS> and <https://github.com/ShiDongyuan/Mutichannel_Jonit_LMS_algorithm.git Joint LMS>
 %
 %% Clean memory and space
 clc       ;
