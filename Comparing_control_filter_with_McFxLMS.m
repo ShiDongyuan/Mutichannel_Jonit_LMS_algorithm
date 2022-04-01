@@ -64,7 +64,7 @@ for ii = 1:4
     plot(index/fs, a.Err_v(:,ii),index/fs, b.Err_array(:,ii));
     grid on ;
     axis([-inf inf -inf inf]);
-    title("The " + num2str(ii)+"th error sginal",'Interpreter','latex');
+    title("The error sginal e" + num2str(ii),'Interpreter','latex');
     if ii==1
         legend({'Multichannel joint LMS','McFxLMS'},'Interpreter','latex');
     end

@@ -13,7 +13,7 @@ Wc_high = Fc_high*2/fs ;
 Len = 256 ;
 Primary_path_matrix = zeros(4,Len,4);
 for Refer_item = 1:4
-    for Err_item = 1:4
+    for Err_item $= 1:4
         Primary_path = awgn(fir1(Len-1,[Wc_low Wc_high]),50);
         Primary_path_matrix(Err_item,:,Refer_item) = Primary_path' ;
     end

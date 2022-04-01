@@ -45,4 +45,5 @@ plot(er)
 grid on ;
 figure ;
 plot(1:N,e,1:N,er);
+legend({'FxLMS','Tst code'})
 grid on ;
