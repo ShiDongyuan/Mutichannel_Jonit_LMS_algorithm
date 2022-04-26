@@ -19,7 +19,9 @@ for Secon_item = 1:4
 end
 
 %% Filtering
-muw   = 0.000013 ;
+muw   =  2.3*1.085822123055911e-05; %0.000013 ;
+muw   =  1.1176e-05 ;
+muw   = 1.1714e-05;
 N     = size(Distur_matrix,1);
 Yd    = zeros(Ls,4,4)        ;
 Err_v = zeros(N,4)           ;
@@ -55,5 +57,10 @@ grid on         ;
 figure
 freqz(Wc_matrix(:,1,1)',1,512);
 save('Four_channel_ANC_tst_Program.mat','Err_v','Wc_matrix');
+
+err_star = Err_v(1:1024,4);
+err_end  = Err_v(10*1024:11*1024-1,4);
+f_value  = Fitenss_LMS(err_star,err_end);
+disp("Descent speed :" + num2str(f_value));
 
 
